@@ -3,13 +3,6 @@
 import requests,urllib2,cookielib,random,json
 from bs4 import BeautifulSoup
 def html_sample(url):
-    #url='http://news.sina.com.cn/o/2017-10-24/doc-ifymyyxw4478787.shtml'
-    #评论数js
-    # '''url='http://comment5.news.sina.com.cn/page/info?version=1&format=js&channel=gn&newsid=comos-fymyyxw4478787\
-    # &group=&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=20&jsvar=loader_1508805488653_34193515'''''
-    # #尝试去掉url末尾的时间戳
-    # url='http://comment5.news.sina.com.cn/page/info?version=1&format=js&channel=gn&newsid=comos-fymyyxw4478787\
-    # &group=&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=20'
 
     cookie_support= urllib2.HTTPCookieProcessor(cookielib.CookieJar())
     opener = urllib2.build_opener(cookie_support,urllib2.HTTPHandler)
